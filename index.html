@@ -1,59 +1,151 @@
-<html>
-    <head>
-        <title>
-            Veera's Webpage!
-        </title>
-        <link rel="stylesheet" href+"styles.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">Veera's Page</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veera's Webpage!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+          crossorigin="anonymous">
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            background-color: #f8f9fa; /* Light background */
+            color: #333; /* Dark text */
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #007bff; /* Bootstrap primary blue */
+            margin: 20px 0;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 20px;
+            text-align: center;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Veera's Page</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="aboutme.html">About Me</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="MHI_resources" tabindex="-1" aria-disabled="true">Disabled</a>
-                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutme.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="MHI_resources" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
                 </ul>
-              </div>
             </div>
-          </nav>
-                </form>
-              </div>
-            </div>
-          </nav>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutme.html">About Me</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="mhi_resources.html">MHI Resources</a></li>
-          </ul>
-    <h1> Wow! I think I did it...</h1> 
-    <p> 
-        I never knew I would be this intrigued by coding, let alone making my own website<br/>
-        <h2> If this code does work..</h2>
-        <p> 
-            Tell Bill Gates, Mark Z and everyone else, I am coming for their position<br/>   
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Welcome to Veera's Webpage!</h1>
+        <p>Your one-stop destination for tech enthusiasm and creativity.</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h2>Wow! I think I did it...</h2>
+        <p>I never knew I would be this intrigued by coding, let alone making my own website.</p>
+
+        <h2>If this code does work...</h2>
+        <p>Tell Bill Gates, Mark Z, and everyone else: I'm coming for their position.</p>
+
+        <h2>New Nickname: Tech Geek!</h2>
+        <div class="text-center">
+            <img src="techgeek.png" alt="Tech Geek" width="400px" class="img-fluid rounded">
+        </div>
+
+        <p>
+            Here's a link to an amazing article: 
+            <a href="https://en.wikipedia.org/wiki/Inception" target="_blank">Inception (Wikipedia)</a>
         </p>
-        <h2> New nickname...Tech Geek!</h2>
-        <img src="techgeek.png" width="400px" /><br/>
-        <br/>
-        <a href="https://en.wikipedia.org/wiki/Inception">Here's a link to the inception website</a>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/2xhmdzNZ820?si=BmlS5S2HDW5M6WTL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </body>
+
+        <div class="video-container">
+            <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/2xhmdzNZ820?si=BmlS5S2HDW5M6WTL" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Veera's Webpage | All Rights Reserved</p>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" 
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9ScvfQY7F6pOnMIB9luFsaWXNf+k7clBXyokl" 
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" 
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFwccUjUJOkvxKeP7gmXKp4UAn6" 
+            crossorigin="anonymous"></script>
+</body>
 </html>
+
 
 
 
